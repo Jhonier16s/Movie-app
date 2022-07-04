@@ -1,0 +1,11 @@
+.container {
+  background-color: #0b1e35;
+}
+
+.movie_container {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

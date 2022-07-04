@@ -1,0 +1,6 @@
+.container{
+    background: #0b1e35;
+    display: flex;
+    color: #eee;
+    justify-content: center;
+}

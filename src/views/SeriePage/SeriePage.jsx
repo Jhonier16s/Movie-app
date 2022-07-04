@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react'
 import {useParams} from 'react-router-dom'
 import MovieCard from '../../components/MovieCard/MovieCard';
-import styles from './MoviePage.module.css'
-const MoviePage = () => {
+import styles from './SeriePage.module.css'
+const SeriePage = () => {
   const {id} = useParams()
   console.log(id);
-  const URL= `https://api.themoviedb.org/3/movie/${id}?api_key=e73beb425fdbe57a77fd9ea5fcca05fc`
+  const URL= `https://api.themoviedb.org/3/tv/${id}?api_key=e73beb425fdbe57a77fd9ea5fcca05fc`
 
   const [movie, setMovie] = useState([])
 
@@ -19,6 +19,7 @@ const MoviePage = () => {
     .then(data=>{
       setMovie(data)
       console.log(data);
+      
     })
 
   } 
@@ -26,7 +27,7 @@ const MoviePage = () => {
     <>
       <div className={styles.container}>
         <MovieCard 
-        title={movie.name || movie.title} 
+        title={movie.name} 
         img={movie.backdrop_path} 
         urlView={movie.homepage}
         description={movie.overview}
@@ -39,4 +40,4 @@ const MoviePage = () => {
   )
 }
 
-export default MoviePage
+export default SeriePage

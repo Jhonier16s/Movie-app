@@ -7,7 +7,7 @@ const CategoriesPage = () => {
   return (
     <>
       <div className={styles.container}>
-      <h2>Categorias</h2>
+      
         <MenuCategories />
       </div>
     </>

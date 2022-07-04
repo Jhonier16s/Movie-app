@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <>
       <header>
-        <h3>logo</h3>
+        <h3>Movie app </h3>
         <nav ref={navRef}>
           <NavLink
             className={({ isActive }) => (isActive ? "active" : "NavBar-item")}
@@ -34,6 +34,12 @@ const Navbar = () => {
             to="/Populars"
           >
             Populars
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "NavBar-item")}
+            to="/Series"
+          >
+            Series
           </NavLink>
 
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>

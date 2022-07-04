@@ -1,0 +1,39 @@
+.button{
+    text-decoration: none;
+    background-color: #4AB7C3;
+    padding: 8px 8px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #000;
+}
+ .button:focus{
+    background: #000;
+    text-decoration: none;
+    color: #eee;
+    transition: border-color 0.5s, background-color 0.5s, color
+    
+} 
+.button:hover{
+    transition: 0.2s;
+    box-shadow: #104F94 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px 
+}
+.button_container{
+    margin: 10px;
+    display: flex;
+    justify-content: flex start;
+}
+
+@media only screen and (max-width: 800px) {
+ .button{
+    font-size: 15px;
+ } 
+}
+@media only screen and (max-width: 680px){
+    .button{
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+  

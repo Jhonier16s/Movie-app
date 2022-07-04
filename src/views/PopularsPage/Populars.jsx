@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Card from "../../components/Card/Card";
-import styles from "./Homepage.module.css";
-const HomePage = () => {
+import styles from "./Populars.module.css";
+const PopularsPage = () => {
   const ApiKey = "&api_key=e73beb425fdbe57a77fd9ea5fcca05fc";
   const URL =
     "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc" +
@@ -35,12 +35,6 @@ const HomePage = () => {
   return (
     <>
       <div className={styles.container}>
-        <form className={styles.input_container} onSubmit={handleSubmit}>
-          <div>
-            <input type="text" placeholder="Movie Name" onChange={(e)=>(setSearch(e.target.value))} vale={search} />
-            
-          </div>
-        </form>
         <div className={styles.movies_container}>
           {dataMovie.map((res, pos) => (
             <Card info={res} key={pos} />
@@ -51,4 +45,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default PopularsPage;

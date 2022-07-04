@@ -1,3 +1,37 @@
-.container{
-    background-color: aqua;
+.menu_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;  
+}
+.container {
+  padding: 10px 10px;
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 39px;
+  width: 80%;
+  background: #071423;
+  box-shadow: 17px 17px 34px #050e19, -17px -17px 34px #091a2d;
+  flex-wrap: wrap;
+  
+}
+.buttons_container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 10px;
+  justify-content: center;
+}
+@media only screen and (min-width: 800px) {
+  .container{
+    flex-wrap: nowrap;
+  }
+}
+@media only screen and (max-width: 680px){
+  .buttons_container{
+    flex-direction: row;
+    margin: 2px;
+  }
+
 }
